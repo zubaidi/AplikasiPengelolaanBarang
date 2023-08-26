@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TambahBarangActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="TAMBAH DATA ITEM"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editInputKodeBarang"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:hint="Kode item"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editInputNamaItem"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Nama item"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/editInputKodeBarang"
+        app:layout_constraintStart_toStartOf="@+id/editInputKodeBarang"
+        app:layout_constraintTop_toBottomOf="@+id/editInputKodeBarang" />
+
+    <EditText
+        android:id="@+id/editInputHarga"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Harga beli item"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/editInputNamaItem"
+        app:layout_constraintStart_toStartOf="@+id/editInputNamaItem"
+        app:layout_constraintTop_toBottomOf="@+id/editInputNamaItem" />
+
+    <EditText
+        android:id="@+id/editInputStok"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Jumlah stok masuk"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/editInputHarga"
+        app:layout_constraintStart_toStartOf="@+id/editInputHarga"
+        app:layout_constraintTop_toBottomOf="@+id/editInputHarga" />
+
+    <Button
+        android:id="@+id/btnSimpan"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#E91E63"
+        android:text="Simpan data"
+        app:layout_constraintEnd_toEndOf="@+id/editInputStok"
+        app:layout_constraintStart_toStartOf="@+id/editInputStok"
+        app:layout_constraintTop_toBottomOf="@+id/editInputStok" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
