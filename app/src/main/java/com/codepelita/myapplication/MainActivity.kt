@@ -16,5 +16,10 @@ class MainActivity : AppCompatActivity() {
                 this, BarangActivity::class.java
             ))
         }
+        binding.cvAdmin.setOnClickListener {
+            startActivity(Intent(
+                this, UserActivity::class.java
+            ))
+        }
     }
 }
